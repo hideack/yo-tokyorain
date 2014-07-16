@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var core = require('../lib/core');
+
+var main = function() {
+  program
+    .version(require('../package.json').version)
+    .usage('[options] <file ...>')
+    .option('-k, --key <key>',     'Yo API Key', String)
+    .option('-p, --place <place>', 'City ID (ref: http://weather.livedoor.com/forecast/rss/primary_area.xml)', String)
+    .parse(process.argv);
+
+  if (typeof program.key === "undefined" || typeof program.place == "undefined") {
+    program.help();
+  }
+
+  core.start(program);
+}
+
+main();
