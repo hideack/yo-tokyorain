@@ -1,6 +1,6 @@
 {
   "name": "yo-tokyorain",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "yo-tokyorain ============",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hideack/yo-tokyorain/issues"
+  },
+  "bin": {
+    "yo-tokyorain": "bin/yo-tokyorain"
   },
   "homepage": "https://github.com/hideack/yo-tokyorain",
   "dependencies": {
