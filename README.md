@@ -1,6 +1,8 @@
 yo-tokyorain
 ============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hideack/yo-tokyorain.svg)](https://greenkeeper.io/)
+
 ### Installation
 
 ```
